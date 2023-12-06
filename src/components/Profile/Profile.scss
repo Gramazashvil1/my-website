@@ -1,0 +1,17 @@
+.profile{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding:  130px 0;
+
+  .profile-main{
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    height: 500px;
+    margin: 0 25px;
+  }
+}
+

@@ -1,0 +1,177 @@
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+
+  nav {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 25px;
+    justify-content: space-between;
+
+    .logo {
+      font-size: 23px;
+      margin-right: 15px;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      align-items: center;
+      letter-spacing: 0.5px;
+    }
+
+    .main-menu-li {
+      font-size: 18px;
+      margin-right: 35px;
+    }
+
+    .language-li {
+      background-color: #eee;
+      color: #2a2a2a;
+      border: 1px solid #c2c2c2;
+      border-radius: 25px;
+      display: flex;
+      padding: 0 16px;
+      font-size: 15px;
+      height: 33px;
+    }
+
+    .theme-li {
+      border: 1px solid #c2c2c2;
+      border-radius: 25px;
+      height: 33px;
+      margin-left: 12px;
+
+      .ant-switch {
+        height: 33px;
+        width: 65px;
+        background-color: #eee;
+
+        .dark-moon {
+          margin-left: -9px;
+          height: 25px;
+          width: 25px;
+          margin-top: 23px;
+          background-color: #eee;
+          border-radius: 30px;
+          position: relative;
+        }
+
+        .ant-switch-handle:before {
+          height: 25px;
+          width: 25px;
+          top: 2px;
+          border-radius: 20px;
+          box-shadow: none;
+        }
+
+        &:hover {
+          background-color: #eee;
+        }
+      }
+
+      .ant-switch-inner-unchecked {
+        transition: margin-inline-start 0.2s ease-in;
+      }
+
+      .ant-switch-checked .ant-switch-handle {
+        inset-inline-start: calc(73% - 20px);
+      }
+
+      .ant-switch .ant-switch-handle::before {
+        inset-inline-start: 5px;
+        background-color: #f7b400;
+      }
+    }
+
+    .menu-button-li {
+      margin-left: 15px;
+      display: none;
+
+      .ant-button-drawer {
+        height: 55px;
+        box-shadow: none;
+        padding: 5px 2px;
+        background: none !important;
+        transition: none;
+        cursor: default;
+        border: none;
+
+        .hr {
+          border: none;
+          background-color: #eee;
+          height: 5px;
+          margin: 7px 0;
+          width: 45px;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
+
+.ant-drawer {
+  .ant-drawer-header {
+    background-color: #177bd2;
+    padding: 15px 24px;
+
+    .ant-drawer-title {
+      color: #eee;
+      font-size: 25px;
+      display: flex;
+      margin-left: 5px;
+    }
+
+    .ant-drawer-close {
+      display: flex;
+      align-self: end;
+      font-size: 40px;
+      color: #eee !important;
+      cursor: default;
+    }
+
+    .ant-drawer-header-title {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .ant-drawer-li {
+    font-size: 23px;
+    margin: 20px 5px;
+    max-width: 250px;
+  }
+}
+
+// header media
+@media only screen and (max-width: 1024px) {
+  .menu-button-li {
+    display: block !important;
+  }
+  .main-menu-li {
+    display: none;
+  }
+  .ant-switch {
+    cursor: default;
+  }
+}
+
+// header themes
+.dark-theme {
+  background-color: #2d2f33;
+  box-shadow: #27292c 0 5px 0 0;
+  transition: 0.6s;
+}
+
+.light-theme {
+  background-color: #d7d7d7;
+  box-shadow: #d0d0d0 0 5px 0 0;
+  transition: 0.6s;
+}
