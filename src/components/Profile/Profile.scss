@@ -120,26 +120,41 @@
 
 // Profile media
 @media only screen and (max-width: 800px) {
-  .profile .profile-main {
-    flex-direction: column;
 
-    .buttons {
-      position: relative !important;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center
-    }
 
-    .profile-inner-left {
-      padding: 0;
-      text-align: center;
 
-      h1 {
+  .profile{
+    padding: 130px 0 70px 0;
+
+
+    .profile-main {
+      flex-direction: column;
+
+      .buttons {
+        position: relative !important;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center
+      }
+
+      .profile-inner-left {
         padding: 0;
+        text-align: center;
+
+        h1 {
+          padding: 0;
+        }
       }
     }
   }
+
+
+
+
 }
+
+
+
 
 // Profile Media design element hide
 @media only screen and (max-width: 1024px) {
