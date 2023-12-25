@@ -3,6 +3,7 @@ import Header from "./components/Header/Header.jsx";
 import Profile from "./components/Profile/Profile.jsx";
 import About from "./components/About/About.jsx";
 import Skills from "./components/Skills/Skills.jsx";
+import Projects from "./components/Projects/Projects.jsx";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
             <Profile/>
             <About/>
             <Skills/>
+            <Projects/>
         </>
     )
 }
