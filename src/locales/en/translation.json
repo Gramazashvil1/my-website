@@ -1,0 +1,22 @@
+{
+  "home": "home",
+  "about": "about",
+  "skills": "skills",
+  "projects": "projects",
+  "contact": "contact",
+  "menuTitle": "MENU",
+  "profileHello": "Hello,",
+  "profileFullName": "I'm Goga Ramazashvili ",
+  "profileDeveloper": "Front-End Developer",
+  "profileContactBtn": "CONTACT ME",
+  "profileCvBtn": "DOWNLOAD CV",
+  "profileText": "Creator of sophisticated artificial intelligence. He has developed one that can end war and destroy humanity.",
+  "aboutTitle": "ABOUT ME",
+  "aboutText": "In the midst of a looming war between humans and artificial intelligence, ex-special forces agent Joshua, grieving the disappearance of his wife, is hired to find and kill the creator of a sophisticated artificial intelligence. He developed a mysterious weapon with which the war.",
+  "skillsTitle": "SKILLS",
+  "projectsTitle": "PROJECTS",
+  "projectTitle1": "coming soon",
+  "projectTechStack": "Tech Stack",
+  "projectLiveView": "Live View",
+  "projectViewCode": "View Code"
+}
