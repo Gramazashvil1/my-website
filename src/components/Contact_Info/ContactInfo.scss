@@ -1,0 +1,112 @@
+.contact-info {
+  height: 40px;
+  display: flex;
+  gap: 15px;
+  padding: 20px 0;
+  justify-content: center;
+  position: relative;
+
+  ul {
+    display: flex;
+    position: absolute;
+    bottom: 7px;
+
+    li {
+
+      a {
+        width: 53px;
+        height: 53px;
+        line-height: 67px;
+        text-align: center;
+        background-color: #e3e3e3;
+        margin: 0 6px;
+        display: block;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        border: 3px solid #fff;
+        box-shadow: inset 0 0 19px -14px #2a2929;
+
+        @media (max-width: 1024px) {
+          cursor: default;
+        }
+
+        svg {
+          transition: .5s;
+
+          path {
+            fill: #525252;
+            transition: .5s;
+          }
+        }
+
+        .icon {
+          position: relative;
+          z-index: 3;
+          transition: .6s;
+        }
+
+        &:hover {
+          .icon {
+            transform: rotateY(360deg);
+          }
+
+          svg path {
+            fill: #ffffff;
+            transition: .5s;
+          }
+
+          @media (max-width: 1024px) {
+            &:hover {
+              .icon {
+                transform: rotateY(0deg);
+              }
+
+              svg path {
+                fill: #525252;
+                transition: .5s;
+              }
+
+              &:before {
+                top: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      a:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f00;
+        transition: .4s;
+        z-index: 2;
+      }
+
+      a:hover:before {
+        top: 0;
+      }
+    }
+
+    li:nth-child(1) a:before {
+      background: #007ab5;
+    }
+
+    li:nth-child(2) a:before {
+      background: #e34133;
+    }
+
+    li:nth-child(3) a:before {
+      background: #2d333b;
+    }
+
+    li:nth-child(4) a:before {
+      background: #2d8a49;
+    }
+  }
+}
