@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-weight: normal;
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav {
+    ul li a:lang(ka) {
+      font-family: "BPG Nino Mtavruli", sans-serif;
+    }
+
+    .language_btn:lang(ka) {
+      font-family: "BPG Nino Mtavruli", sans-serif;
+      padding-top: 5px;
+      font-size: 18px;
+    }
+
+    .language_btn:lang(en) {
+      font-size: 16px;
+    }
+  }
+
+  .ant-drawer:lang(ka) {
+    a {
+      font-family: "BPG Nino Mtavruli", sans-serif;
+    }
+
+    .ant-drawer-title {
+      font-family: "BPG Nino Mtavruli", sans-serif;
+      padding-top: 9px;
+    }
+  }
+
+  .profile-inner-left {
+    h1:lang(en) {
+      font-size: clamp(2rem, 4.3vw, 2.8rem);
+      margin-top: -8px;
+    }
+
+    h1:lang(ka) {
+      font-size: clamp(2rem, 3.8vw, 2.9rem);
+      font-family: "BPG Nino Mtavruli", sans-serif;
+      margin-top: -4px;
+    }
+  }
+
+  .buttons:lang(ka) {
+    span {
+      font-family: "BPG Nino Mtavruli", sans-serif;
+      padding-top: 5px;
+    }
+  }
+
+  .about_title:lang(ka){
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    padding-top: 7px;
+  }
+
+  .skills_title:lang(ka){
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    padding-top: 7px;
+  }
+
+  .projects_title:lang(ka){
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    padding-top: 7px;
+  }
+}
+
+
+*:focus-visible {
+  outline: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.ant-wave {
+  display: none;
+}
+
+a {
+  color: unset;
+
+  &:hover {
+    color: unset;
+  }
+}
+
+
+/*dark theme*/
+body.dark-theme {
+  background-color: #38393e;
+  color: #eeeeee;
+  transition: 0.5s;
+
+  .header {
+    background-color: #2d2f33;
+    box-shadow: #27292c 0 5px 0 0;
+    transition: 0.5s;
+  }
+
+  .profile-element {
+    background-image: url("assets/images/el_1.png");
+  }
+
+  .ant-drawer .ant-drawer-content {
+    background-color: #2d2f33;
+  }
+
+  .ant-input {
+    color: #eeeeee;
+    background-color: #2c2c30;
+    transition: 0.5s;
+
+    &::placeholder {
+      color: #adadad !important;
+    }
+  }
+
+  .contact_info {
+    background-color: #2c2c30;
+  }
+
+  .projects_card {
+    background-color: #414141;
+
+    .projects_card_bottom {
+      background-color: #494949;
+    }
+  }
+}
+
+/*light theme*/
+body.light-theme {
+  background-color: #e2e2e2;
+  color: #2a2a2a;
+  transition: 0.5s;
+
+  .header {
+    background-color: #d7d7d7;
+    box-shadow: #d0d0d0 0 5px 0 0;
+    transition: 0.5s;
+  }
+
+  .profile-element {
+    background-image: url("assets/images/el_2.png");
+  }
+
+  .ant-drawer .ant-drawer-content {
+    background-color: #e5e5e5;
+  }
+
+  .ant-input {
+    color: #151515;
+    background-color: #cecece;
+    transition: 0.5s;
+
+    &::placeholder {
+      color: #656565 !important;
+    }
+  }
+
+  .contact_info {
+    background-color: #b9b9b9;
+  }
+
+  .projects_card {
+    background-color: #e3e3e3;
+
+    .projects_card_bottom {
+      background-color: #d5d5d5;
+    }
+  }
+}
