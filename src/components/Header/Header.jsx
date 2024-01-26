@@ -92,10 +92,11 @@ function Header() {
                             unCheckedChildren={<div className="dark-moon"></div>}
                             checked={themeStatus}
                             onChange={switchTheme}
+                            aria-label="Switch Theme"
                         />
                     </li>
                     <li className="menu-button-li">
-                        <Button className="ant-button-drawer" type="primary" onClick={openCloseDrawer}>
+                        <Button className="ant-button-drawer" type="primary" aria-label="Toggle Menu" onClick={openCloseDrawer}>
                             {[...Array(3)].map((_, index) => (
                                 theme === 'dark-theme'
                                     ? <hr key={index} style={{backgroundColor: "#e2e2e2"}} className="hr"/>
