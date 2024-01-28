@@ -5,7 +5,14 @@ import {Link} from "react-scroll"
 import {useTranslation} from "react-i18next";
 
 function Header() {
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || localStorage.setItem('theme', 'dark-theme'));
+    const [theme, setTheme] = useState(() => {
+        if (localStorage.getItem('theme') === null || localStorage.getItem('theme') === 'undefined') {
+            localStorage.setItem('theme', 'dark-theme');
+            return 'dark-theme';
+        }
+        return localStorage.getItem('theme');
+    });
+
     const [themeStatus, setThemeStatus] = useState(false);
     const [open, setOpen] = useState(false);
     const {t, i18n} = useTranslation();
