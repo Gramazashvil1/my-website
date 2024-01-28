@@ -7,65 +7,86 @@
   .skills-main {
     display: flex;
     width: 1200px;
-    margin: 0 25px;
+    padding: 0 25px;
     gap: 45px;
 
-    .skills-img-frame img{
-      border-radius: 8px;
-      box-shadow: 0 2px 0 0 #9b9b9b;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 24px;
     }
 
-    .skills_right{
+    .skills-img-frame img {
+      border-radius: 8px;
+      box-shadow: 0 2px 0 0 #9b9b9b;
+      transition: transform 0.4s ease;
+      cursor: pointer;
+      height: auto;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      @media (max-width: 800px) {
+        max-width: 100%;
+      }
+
+      @media (max-width: 1024px) {
+        cursor: default;
+        &:hover {
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .skills_right {
       display: flex;
       flex-direction: column;
       width: 100%;
-      gap: 17px;
+      gap: 10px;
+
+      @media (max-width: 800px) {
+        gap: 25px;
+      }
 
       .skills_title {
         font-size: 27px;
       }
 
-      .skills_container{
+      .skills_container {
         display: flex;
         flex-wrap: wrap;
-        gap: 11px;
+        gap: 10px;
 
-        .skill{
-          height: 60px;
-          width: 60px;
-          box-shadow: inset #000000 0 0 60px -35px;
+        @media (max-width: 800px) {
+          justify-content: center;
+        }
+
+        .skill {
+          padding: 12px 17px;
+          box-shadow: inset #0a0a0a 0 0 60px -35px;
           border-radius: 7px;
           display: flex;
           justify-content: center;
           place-items: center;
+          transition: 0.3s ease-in-out;
+          cursor: pointer;
 
+          &:hover {
+            background-color: #0f77d2;
+            color: #eee;
+          }
+
+          @media (max-width: 1024px) {
+            cursor: default;
+            &:hover {
+              background-color: unset;
+              color: unset;
+            }
+          }
         }
       }
     }
-  }
-}
-
-// Skills media
-@media only screen and (max-width: 800px) {
-  .skills-main {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap:25px !important;
-
-    .skills_right{
-      gap: 27px !important;
-
-      .skills_container{
-        justify-content: center;
-      }
-    }
-
-    .skills-img-frame{
-      img{
-        max-width: 100%;
-      }
-    }
-
   }
 }

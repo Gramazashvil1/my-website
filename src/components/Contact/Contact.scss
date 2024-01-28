@@ -1,0 +1,181 @@
+.contact {
+  width: 100%;
+  padding: 80px 0 80px 0;
+  box-shadow: inset #1a1a1a 0 5px 15px -15px;
+
+  .contact_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+    gap: 45px;
+
+    @media (max-width: 1024px) {
+      gap: 20px;
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .container_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (max-width: 1024px) {
+        padding-top: 60px;
+      }
+
+      @media (max-width: 800px) {
+        padding: 0;
+      }
+
+
+      .contact_img_frame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+        img {
+          border-radius: 8px;
+          box-shadow: 0 2px 0 0 #9b9b9b;
+          transition: transform 0.4s ease;
+          cursor: pointer;
+          height: auto;
+
+          &:hover {
+            transform: translateY(-5px);
+          }
+
+          @media (max-width: 800px) {
+            max-width: 100%;
+          }
+
+          @media (max-width: 1024px) {
+            cursor: default;
+            &:hover {
+              transform: translateY(0);
+            }
+          }
+        }
+      }
+    }
+
+    .container_right_main {
+      width: 100%;
+
+      @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact_title {
+        font-size: 27px;
+        font-weight: normal;
+        padding-bottom: 10px;
+
+        @media (max-width: 1024px) {
+          display: flex;
+          align-self: center;
+          padding-bottom: 25px;
+        }
+      }
+
+      .ant-form {
+        display: flex;
+        gap: 25px;
+
+        @media (max-width: 1024px) {
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+        }
+
+        .ant-input {
+          border: none;
+          font-size: 15px;
+          padding: 13px 13px;
+          box-shadow: inset #232323 0 1px 5px -2px;
+        }
+
+        .ant-input::placeholder {
+          color: #1a1a1a;
+          opacity: 1;
+        }
+
+        .ant-form-item-explain-error {
+          font-size: 14px;
+        }
+      }
+
+      .container_right_inner_left {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        @media (max-width: 1024px) {
+          width: 90%;
+        }
+      }
+
+      .container_right_inner_right {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 1024px) {
+          width: 90%;
+        }
+
+        textarea {
+          width: 100%;
+          min-height: 207px;
+          max-height: 207px;
+
+          @media (max-width: 1024px) {
+            width: 100%;
+            min-height: 132px;
+            max-height: 132px;
+          }
+        }
+
+        .contact_button {
+          float: right;
+          font-size: 17px;
+          height: 43px;
+          border: none;
+          background-color: #0b73ce;
+          color: #fff;
+          box-shadow: #232323 0 1px 2px -1px;
+          padding: 0 23px 0 23px;
+          transition: 0.4s ease-out;
+
+          &:hover {
+            color: #fff;
+            background-color: #0059a6;
+
+            @media (max-width: 1024px) {
+              background-color: #0b73ce;
+            }
+          }
+        }
+
+        .ant-btn {
+          @media (max-width: 1024px) {
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-notification .ant-notification-notice-wrapper .ant-notification-notice-with-icon .ant-notification-notice-message {
+  font-size: 15px;
+  margin: 0 0 0 35px;
+}
