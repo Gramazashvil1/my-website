@@ -1,0 +1,16 @@
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1215686275);
+  box-shadow: inset #1a1a1a 0 5px 15px -13px;
+
+  .footer_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    margin: 0 25px;
+    font-size: 15px;
+  }
+}
