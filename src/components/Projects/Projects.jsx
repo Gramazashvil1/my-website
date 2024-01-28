@@ -1,7 +1,45 @@
 import "./Projects.scss"
-import projectsData from '../../json/projects.json';
 import {useTranslation} from "react-i18next";
 import {useEffect, useState} from "react";
+import projectImage1 from '/src/assets/images/pro_img_1.webp'
+import projectImage2 from '/src/assets/images/pro_img_2.webp'
+import projectImage3 from '/src/assets/images/pro_img_3.webp'
+
+const projectsData = [
+    {
+        "id": 1,
+        "techStackTitle": "projectTechStack",
+        "live": "projectLiveView",
+        "viewCode": "projectViewCode",
+        "title": "projectTitle1",
+        "tech": ["React", "JS", "Vite", "Antd"],
+        "liveLink": "#",
+        "viewCodeLink": "#",
+        "image": projectImage1
+    },
+    {
+        "id": 2,
+        "techStackTitle": "projectTechStack",
+        "live": "projectLiveView",
+        "viewCode": "projectViewCode",
+        "title": "projectTitle1",
+        "tech": ["React", "JS", "Vite", "Antd"],
+        "liveLink": "#",
+        "viewCodeLink": "#",
+        "image": projectImage2
+    },
+    {
+        "id": 3,
+        "techStackTitle": "projectTechStack",
+        "live": "projectLiveView",
+        "viewCode": "projectViewCode",
+        "title": "projectTitle1",
+        "tech": ["React", "JS", "Vite", "Antd"],
+        "liveLink": "#",
+        "viewCodeLink": "#",
+        "image": projectImage3
+    }
+]
 
 function Projects() {
 
