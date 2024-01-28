@@ -51,23 +51,34 @@
   .buttons:lang(ka) {
     span {
       font-family: "BPG Nino Mtavruli", sans-serif;
-      padding-top: 5px;
+      padding-top: 7px;
     }
   }
 
-  .about_title:lang(ka){
+  .about_title:lang(ka) {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    padding-top: 8px;
+  }
+
+  .skills_title:lang(ka) {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    padding-top: 9px;
+  }
+
+  .projects_title:lang(ka) {
     font-family: "BPG Nino Mtavruli", sans-serif;
     padding-top: 7px;
   }
 
-  .skills_title:lang(ka){
+  .contact_title:lang(ka) {
     font-family: "BPG Nino Mtavruli", sans-serif;
-    padding-top: 7px;
+    padding-top: 9px;
   }
 
-  .projects_title:lang(ka){
+  .contact_button span:lang(ka){
     font-family: "BPG Nino Mtavruli", sans-serif;
     padding-top: 7px;
+    letter-spacing: 0.7px;
   }
 }
 
@@ -106,7 +117,7 @@ body.dark-theme {
   }
 
   .profile-element {
-    background-image: url("assets/images/el_1.png");
+    background-image: url("assets/images/el_1.webp");
   }
 
   .ant-drawer .ant-drawer-content {
@@ -123,12 +134,17 @@ body.dark-theme {
     }
   }
 
-  .contact_info {
-    background-color: #2c2c30;
-  }
-
   .projects_card {
     background-color: #414141;
+
+    .card_hr {
+      background-color: #2f2f2f;
+    }
+
+    .card_tech_stack {
+      border: 1px solid #2f2f2f;
+      box-shadow: inset #171717 0 0 9px -4px;
+    }
 
     .projects_card_bottom {
       background-color: #494949;
@@ -149,7 +165,7 @@ body.light-theme {
   }
 
   .profile-element {
-    background-image: url("assets/images/el_2.png");
+    background-image: url("assets/images/el_2.webp");
   }
 
   .ant-drawer .ant-drawer-content {
@@ -166,15 +182,20 @@ body.light-theme {
     }
   }
 
-  .contact_info {
-    background-color: #b9b9b9;
-  }
-
   .projects_card {
-    background-color: #e3e3e3;
+    background-color: #dcdbdb;
+
+    .card_hr {
+      background-color: #a8a8a8;
+    }
+
+    .card_tech_stack {
+      border: 1px solid #9a9a9a;
+      box-shadow: inset #171717 0 0 9px -5px;
+    }
 
     .projects_card_bottom {
-      background-color: #d5d5d5;
+      background-color: #cecdcd;
     }
   }
 }

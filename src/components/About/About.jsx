@@ -1,23 +1,21 @@
 import "./About.scss"
-import about_img from '../../assets/images/about_img.png'
+import {useTranslation} from "react-i18next";
+import aboutImage from '../../assets/images/about_img.webp';
+
+
 function About() {
+    const {t} = useTranslation()
+
     return (
-        <div className="about">
+        <div className="about" id="about">
             <div className="about-main">
-
                 <div className="about-img-frame">
-                    <img src={about_img} alt="about me"/>
+                    <img src={aboutImage} alt="AboutImage" loading="lazy" width="350" height="280"/>
                 </div>
-
                 <div className="about_right">
-                    <p className="about_title">ABOUT ME</p>
+                    <h2 className="about_title">{t('aboutTitle')}</h2>
                     <p className="about_text">
-                        consectetur adipisicing elit. Dolor earum neque pariatur quisquam soluta! Dignissimos enim
-                        libero non velit voluptates. Commodi doloremque expedita nihil numquam quia. Ab accusamus
-                        aliquid architecto corporis cum cupiditate deserunt dolore ducimus ea eaque earum eius esse
-                        explicabo, facilis fuga hic illum ipsam maiores minima modi molestias, mollitia necessitatibus
-                        nemo neque nisi nobis odio odit officia omnis perferendis placeat possimus provident ratione
-                        suscipit ullam veniam voluptates.
+                        {t('aboutText')}
                     </p>
                 </div>
             </div>
