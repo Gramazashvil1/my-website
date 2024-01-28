@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "techStackTitle": "projectTechStack",
+    "live": "projectLiveView",
+    "viewCode": "projectViewCode",
+    "title": "projectTitle1",
+    "tech": ["React", "JS", "Vite", "Antd"],
+    "liveLink": "#",
+    "viewCodeLink": "#",
+    "image": "/src/assets/images/pro_img_1.webp"
+  },
+  {
+    "id": 2,
+    "techStackTitle": "projectTechStack",
+    "live": "projectLiveView",
+    "viewCode": "projectViewCode",
+    "title": "projectTitle1",
+    "tech": ["React", "JS", "Vite", "Antd"],
+    "liveLink": "#",
+    "viewCodeLink": "#",
+    "image": "/src/assets/images/pro_img_2.webp"
+  },
+  {
+    "id": 3,
+    "techStackTitle": "projectTechStack",
+    "live": "projectLiveView",
+    "viewCode": "projectViewCode",
+    "title": "projectTitle1",
+    "tech": ["React", "JS", "Vite", "Antd"],
+    "liveLink": "#",
+    "viewCodeLink": "#",
+    "image": "/src/assets/images/pro_img_3.webp"
+  }
+]
