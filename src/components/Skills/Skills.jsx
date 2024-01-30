@@ -2,7 +2,6 @@ import "./Skills.scss"
 import {useTranslation} from "react-i18next";
 import skillsImage from '../../assets/images/skills_img.webp';
 
-
 const skills = [
     {id: 1, skillName: 'HTML'},
     {id: 2, skillName: 'CSS'},

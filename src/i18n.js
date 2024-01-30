@@ -1,11 +1,11 @@
 import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import {initReactI18next} from 'react-i18next';
 import translationsEN from './locales/en/translation.json';
 import translationsKA from './locales/ka/translation.json';
 import LanguageDetector from 'i18next-browser-languagedetector'
 
 i18n.on('languageChanged', (lng) => {
-    document.documentElement.setAttribute('lang', lng)
+    document.documentElement.setAttribute('lang', lng);
 })
 i18n.use(LanguageDetector).use(initReactI18next).init({
     supportedLngs: ['ka', 'en'],
@@ -20,10 +20,14 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
         }
     },
     detection: {
-        caches: ['localStorage']
+        caches: ['localStorage'],
+        order: ['localStorage', 'path'],
+        lookupFromPathIndex: 0,
+        checkWhitelist: true
     },
     interpolation: {
-        escapeValue: false
-    }
+        escapeValue: false,
+        formatSeparator: '.'
+    },
 })
-export default i18n
+export default i18n;

@@ -9,7 +9,8 @@ function ContactInfo() {
         <div className="contact-info">
             <ul>
                 <li>
-                    <a target="_blank" rel='noopener noreferrer' aria-label="Linkedin" href="https://www.linkedin.com/in/goga-ramazashvili-1468592ab">
+                    <a target="_blank" rel='noopener noreferrer' aria-label="Linkedin"
+                       href="https://www.linkedin.com/in/goga-ramazashvili-1468592ab">
                         <Linkedin_img className="icon"/>
                     </a>
                 </li>
@@ -19,7 +20,8 @@ function ContactInfo() {
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" rel='noopener noreferrer' aria-label="Github" href="https://github.com/Gramazashvil1">
+                    <a target="_blank" rel='noopener noreferrer' aria-label="Github"
+                       href="https://github.com/Gramazashvil1">
                         <Github_img className="icon"/>
                     </a>
                 </li>

@@ -46,7 +46,6 @@ function Header() {
     return (
         <header className="header">
             <nav className="nav">
-
                 <div className="logo">
                     <h1>
                         <Link to={"home"}
@@ -54,14 +53,13 @@ function Header() {
                               smooth={true}
                               offset={-10}
                               duration={500}
+                              href={"#home"}
                         >
                             G.R
                         </Link>
                     </h1>
                 </div>
-
                 <Drawer title={t('menuTitle')} placement="right" onClose={openCloseDrawer} open={open}>
-
                     <ul>
                         {menuItems.map((item) =>
                             (<li className="ant-drawer-li" key={item.id}>
@@ -71,6 +69,7 @@ function Header() {
                                       offset={item.offset ?? -30}
                                       duration={500}
                                       onClick={openCloseDrawer}
+                                      href={`#${item.title}`}
                                 >
                                     {i18n.language === 'en' ? t(item.title).toUpperCase() : t(item.title)}
                                 </Link>
@@ -84,7 +83,9 @@ function Header() {
                                   spy={true}
                                   smooth={true}
                                   offset={item.offset ?? -250}
-                                  duration={500}>
+                                  duration={500}
+                                  href={`#${item.title}`}
+                            >
                                 {i18n.language === 'en' ? t(item.title).toUpperCase() : t(item.title)}
                             </Link>
                         </li>))}
@@ -103,7 +104,8 @@ function Header() {
                         />
                     </li>
                     <li className="menu-button-li">
-                        <Button className="ant-button-drawer" type="primary" aria-label="Toggle Menu" onClick={openCloseDrawer}>
+                        <Button className="ant-button-drawer" type="primary" aria-label="Toggle Menu"
+                                onClick={openCloseDrawer}>
                             {[...Array(3)].map((_, index) => (
                                 theme === 'dark-theme'
                                     ? <hr key={index} style={{backgroundColor: "#e2e2e2"}} className="hr"/>

@@ -11,13 +11,36 @@
     <meta name="description" content="Experienced front-end developer dedicated to improve your online presence by developing user-friendly interfaces for digital success.">
     <meta name="keywords" content="front-end developer, web development, React, JavaScript, HTML, CSS">
     <meta name="author" content="Goga Ramazashvili">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&display=swap" as="style">
+    <link rel="preload" href="/node_modules/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css" as="style"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
-    <link rel="preload" as="image" href="src/assets/images/profile_img.webp" />
+    <meta name="theme-color" content="#38393e"/>
+    <link rel="preload" as="image" href="src/assets/images/profile_img.webp"/>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            const f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KCNTMCZ6');
+    </script>
 </head>
 <body>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCNTMCZ6"
+            height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
 <div id="root"></div>
 <script type="module" src="/src/main.jsx"></script>
 </body>

@@ -2,7 +2,6 @@ import "./About.scss"
 import {useTranslation} from "react-i18next";
 import aboutImage from '../../assets/images/about_img.webp';
 
-
 function About() {
     const {t} = useTranslation()
 
