@@ -6,12 +6,13 @@ import Skills from "./components/Skills/Skills.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import Preloader from "./components/Preloader/Preloader.jsx";
 
 function App() {
 
-
     return (
         <>
+            <Preloader/>
             <Header/>
             <Profile/>
             <About/>
