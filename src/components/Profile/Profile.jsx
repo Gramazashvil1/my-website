@@ -31,7 +31,7 @@ function Profile() {
                         </Link>
 
                         <a className="profile_btn" target="_blank" rel='noopener noreferrer'
-                           href="https://drive.google.com/file/d/1m8VPatWZIaFI97oxyUXpjE4apXoBqjv5/view?usp=sharing">
+                           href="https://drive.google.com/file/d/1IUB6UfBXentTDhuP5ElQdjw8WQMHg8yh/view?usp=sharing">
                             <Download_arrow/>
                             <span>
                                 {t('profileCvBtn')}
