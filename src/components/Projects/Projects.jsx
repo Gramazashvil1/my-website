@@ -12,33 +12,30 @@ import 'swiper/css/pagination';
 const projectsData = [
     {
         "id": 1,
-        "techStackTitle": "projectTechStack",
         "live": "projectLiveView",
         "viewCode": "projectViewCode",
-        "title": "projectTitle1",
-        "tech": ["React", "JS", "Vite", "Antd"],
-        "liveLink": "#",
-        "viewCodeLink": "#",
+        "title": "Weather Forecast",
+        "tech": ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React", "Vite", "Ant Design", "Swiper", "Axios", "SVGR", "Day.js", "Yarn", "API"],
+        "liveLink": 'https://elementalforecast.netlify.app/',
+        "viewCodeLink": "https://github.com/Gramazashvil1/weather-website",
         "image": projectImage1
     },
     {
         "id": 2,
-        "techStackTitle": "projectTechStack",
         "live": "projectLiveView",
         "viewCode": "projectViewCode",
         "title": "projectTitle1",
-        "tech": ["React", "JS", "Vite", "Antd"],
+        "tech": ["Empty", "Empty", "Empty", "Empty"],
         "liveLink": "#",
         "viewCodeLink": "#",
         "image": projectImage2
     },
     {
         "id": 3,
-        "techStackTitle": "projectTechStack",
         "live": "projectLiveView",
         "viewCode": "projectViewCode",
         "title": "projectTitle1",
-        "tech": ["React", "JS", "Vite", "Antd"],
+        "tech": ["Empty", "Empty", "Empty"],
         "liveLink": "#",
         "viewCodeLink": "#",
         "image": projectImage3
@@ -48,7 +45,6 @@ const projectsData = [
 function Projects() {
 
     const {t} = useTranslation();
-
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {

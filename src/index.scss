@@ -137,13 +137,13 @@ body.dark-theme {
   .projects_card {
     background-color: #414141;
 
-    .card_hr {
-      background-color: #2f2f2f;
+    .card_info_top {
+      border-bottom: 1px solid #2f2f2f;
     }
 
     .card_tech_stack {
-      border: 1px solid #2f2f2f;
-      box-shadow: inset #171717 0 0 9px -4px;
+      border: 1px solid #323232;
+      box-shadow: inset #171717 0 0 8px -4px;
     }
 
     .projects_card_bottom {
@@ -185,13 +185,13 @@ body.light-theme {
   .projects_card {
     background-color: #dcdbdb;
 
-    .card_hr {
-      background-color: #a8a8a8;
+    .card_info_top {
+      border-bottom: 1px solid #a8a8a8;
     }
 
     .card_tech_stack {
-      border: 1px solid #9a9a9a;
-      box-shadow: inset #171717 0 0 9px -5px;
+      border: 1px solid #b3b3b3;
+      box-shadow: inset #171717 0 0 7px -5px;
     }
 
     .projects_card_bottom {
