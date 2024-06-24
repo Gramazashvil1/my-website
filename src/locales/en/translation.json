@@ -12,7 +12,7 @@
   "profileCvBtn": "DOWNLOAD CV",
   "profileText": "I'm enthusiastic about diving into new projects, using my skills to create well-maintained user-friendly interfaces that boost businesses' success.",
   "aboutTitle": "ABOUT ME",
-  "aboutText": "I am Goga Ramazashvili, 29 years old with a year-long passion for front-end development. I find joy in taking on interesting projects that not only fuel my passion but also provide opportunities to learn and grow. I love learning new things and aim to apply the latest practices in my work. So let's team up and bring your digital vision to life by embracing the latest innovative techniques.",
+  "aboutText": "I am Goga Ramazashvili, a front-end developer with practical experience in ReactJS. I am committed to advancing my skills in this field daily and integrating the latest practices into my work. If you're looking for a motivated developer who values continuous self-improvement and appreciates collaboration, please feel free to reach out to me.",
   "skillsTitle": "SKILLS",
   "projectsTitle": "PROJECTS",
   "contactTitle": "CONTACT",
@@ -25,7 +25,6 @@
   "contactOnSuccess": "Message sent successfully",
   "contactOnError": "An error occurred",
   "footerTitle": "© Goga Ramazashvili 2024",
-  "projectTechStack": "Tech Stack",
   "projectLiveView": "Live Preview",
   "projectViewCode": "View Code",
   "projectTitle1": "Coming soon..."
