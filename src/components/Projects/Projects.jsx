@@ -24,10 +24,10 @@ const projectsData = [
         "id": 2,
         "live": "projectLiveView",
         "viewCode": "projectViewCode",
-        "title": "projectTitle1",
-        "tech": ["Empty", "Empty", "Empty", "Empty"],
-        "liveLink": "#",
-        "viewCodeLink": "#",
+        "title": "Infinite Image Gallery",
+        "tech": ["HTML", "SCSS", "JavaScript", "React", "Vite", "Axios", "Infinite Scroll", "React Masonry", "Yarn", "API"],
+        "liveLink": "https://scrollgalleryx.netlify.app/",
+        "viewCodeLink": "https://github.com/Gramazashvil1/Infinite-gallery",
         "image": projectImage2
     },
     {
