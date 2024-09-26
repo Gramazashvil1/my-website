@@ -29,14 +29,6 @@ function Profile() {
                                 {t('profileContactBtn')}
                             </span>
                         </Link>
-
-                        <a className="profile_btn" target="_blank" rel='noopener noreferrer'
-                           href="https://drive.google.com/file/d/1IUB6UfBXentTDhuP5ElQdjw8WQMHg8yh/view?usp=sharing">
-                            <Download_arrow/>
-                            <span>
-                                {t('profileCvBtn')}
-                            </span>
-                        </a>
                     </div>
 
                     <div className="profile_el">
